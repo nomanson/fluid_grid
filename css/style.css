@@ -1,8 +1,90 @@
-
-/* default.css */
-
-* {
-  box-sizing: border-box; /* makes margin and padding part of the overall width of all elements */
+/* style.css */
+/* GRID 
+This is a 12 column grid with 6.25% columns that has 1.04666666% margin on each side.
+Column size including margins is thus 8.33333333% */
+/* Default styles */
+#wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background: url(../images/12_col.gif)repeat-y;
+    background-size: 100%;
+   margin-bottom: 30px;    outline: 1px dotted #ccc;
+    overflow: hidden;
 }
 
-/* start your css below */
+img {
+    width: 100%;
+    border: 0.1em solid #555;
+}
+
+.left {
+    float: left;
+    margin-left: 0;
+}
+
+/* HEADER */
+header {
+    padding-left: 1.041666666%;
+    padding-right: 1.041666666%;
+    text-align: center;
+    outline: 0.1em dotted #ccc;
+    overflow: hidden;
+}
+
+header>h1 {
+    font-size: 4em;
+}
+
+/* NAVIGATION */
+nav {
+   width: 100%; 
+    outline: 0.1em dotted #ccc;
+    overflow:hidden;
+    }
+    
+nav>ul>li {
+    display: inline-block;
+    width: 18%;
+    outline: 0.1em dotted #ccc;
+}
+nav>ul>li>a {
+    text-decoration: none;
+    color: #BA0C0C;
+    font-size: 1.4em;
+    font-weight:700;   
+    }
+
+/* ARTICLE */
+article {
+    width: 64.57333333%;
+    padding-left: 1.041666666%;
+    padding-right: 1.041666666%;
+    float: left;
+     outline: 1px dotted #ccc;
+}
+
+article .imgframe {
+    width: 48.9533333%;
+    margin: 1.046666666%;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* ASIDE */
+aside {
+    width: 31.24%;
+    padding-left: 1.041666666%;
+    padding-right: 1.041666666%;
+    float: left;
+     outline: 1px dotted #ccc;
+}
+
+/* FOOTER */
+footer {
+  padding-top: 1em;
+    padding-left: 1.041666666%;
+    padding-right: 1.041666666%;
+     outline: 1px dotted #ccc;
+   min-height:60px;
+   overflow:hidden;
+}
